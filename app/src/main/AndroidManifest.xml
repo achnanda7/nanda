@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.achnanda7.smktelkom_mlg.www.bookinventory1_nanda">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.achnanda7.bookinventory1_nanda.MainActivity">
+
+
+        </activity>
+        <activity
+            android:name="com.achnanda7.bookinventory1_nanda.activity.Book_form"
+            android:label="@string/title_activity_book_form"
+            android:parentActivityName="com.achnanda7.bookinventory1_nanda.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.achnanda7.bookinventory1_nanda.MainActivity"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
